@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import Message from "./Message";
 
-const MessageList = ({messages}) => (
+const MessageList = ({ messages }) => (
     <section id="messages-list">
         <ul>
             {messages.map(message => (
-                <Message key={message.id} {...message} />>
+                <Message key={message.id} {...message} />
             ))}
         </ul>
     </section>
-)
+);
 
 //Example of assessing an array of objects as a prop
 MessageList.propTypes = {
@@ -21,6 +21,6 @@ MessageList.propTypes = {
             author: PropTypes.string.isRequired
         }).isRequired
     ).isRequired
-}
+};
 
 export default MessageList;
