@@ -7,10 +7,12 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import chat from "./reducers";
 import * as types from "./constants/ActionTypes";
+import { addUser } from "./actions";
 
 //Create the store, passing it a reducer that will handle dispatched actions
 const store = createStore(chat);
 
+store.dispatch(addUser("Tranquility"));
 //Add Provider, which will provide access to the store to all nested components
 ReactDOM.render(
     <Provider store={store}>

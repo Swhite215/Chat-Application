@@ -2,7 +2,7 @@ import * as types from "../constants/ActionTypes";
 
 //Below are my action creators
 let nextMessageId = 0;
-const nextUserId = 0;
+let nextUserId = 0;
 
 export const addMessage = (message, author) => ({
     type: types.ADD_MESSAGE,
