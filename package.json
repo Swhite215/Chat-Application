@@ -7,7 +7,9 @@
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
     "react-scripts": "2.1.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "resolve": "^1.8.1",
+    "webpack": "^4.25.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,5 +25,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "react-dev-utils": "^6.1.1"
+  }
 }
