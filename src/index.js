@@ -6,7 +6,7 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import chat from "./reducers";
-import * as types from "../constants/ActionTypes";
+import * as types from "./constants/ActionTypes";
 
 //Create the store, passing it a reducer that will handle dispatched actions
 const store = createStore(chat);
